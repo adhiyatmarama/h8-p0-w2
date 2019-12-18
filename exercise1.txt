@@ -1,0 +1,34 @@
+*Newton Second Law*
+
+SIMPAN "masa" dengan nilai 600
+SIMPAN "akselerasi" dengan nilai 2
+SIMPAN "gaya" tanpa diberikan nilai
+HITUNG hasil perkalian "masa" dengan "akselerasi"
+Isikan hasil perkalian ke dalam "gaya"
+TAMPILKAN nilai dari "gaya"
+
+*Tahun Kabisat*
+
+STORE "year" with any value
+IF "((year % 4 == 0) and (year % 100 != 0)) or ((year % 4 == 0) and (year % 100 == 0) and (year % 400 == 0))" THEN
+ DISPLAY "tahun adalah tahun kabisat"
+ELSE
+ DISPLAY "tahun bukan tahun kabisat"
+END IF
+ 
+*Laundry Day*
+
+*Periksa Kuku*
+
+STORE "jumlah_siswa" with value is 1
+STORE "kuku" without any value
+STORE "action" without any value
+WHILE ("jumlah_siswa" <= 40)
+IF ("kuku" == "panjang") THEN
+ SET "action" value become "Hukum siswa"
+ELSE
+ SET "action" value become "Puji siswa"
+END IF
+DISPLAY "action"
+SET "jumlah_siswa" value become "jumlah_siswa"+1
+END WHILE
