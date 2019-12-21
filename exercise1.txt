@@ -18,6 +18,15 @@ END IF
  
 *Laundry Day*
 
+STORE "count_clothes" with value 0
+WHILE ("count_clothes" < 20)
+  DISPLAY "Masukkan baju"
+  IF (Baju input) THEN
+     SET "count_clothes" value become "count_clothes" + 1
+  END IF
+END WHILE
+START MACHINE
+
 *Periksa Kuku*
 
 STORE "jumlah_siswa" with value is 1
